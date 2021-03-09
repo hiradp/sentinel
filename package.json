@@ -1,0 +1,28 @@
+{
+  "name": "sentinel",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --project ./tsconfig.json --removeComments",
+    "start": "node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiradp/sentinel.git"
+  },
+  "author": "hiradp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hiradp/sentinel/issues"
+  },
+  "homepage": "https://github.com/hiradp/sentinel#readme",
+  "dependencies": {
+    "@slack/bolt": "^3.2.0",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "typescript": "^4.2.3"
+  }
+}
