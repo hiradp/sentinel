@@ -10,7 +10,7 @@ export async function analyzeSentiment(text: string): Promise<number> {
     content: text,
     type: 'PLAIN_TEXT',
   };
-  
+
   // Detects the sentiment of the document
   const [result] = await client.analyzeSentiment({
     document,
@@ -24,7 +24,6 @@ export async function analyzeSentiment(text: string): Promise<number> {
   } else {
     throw new Error('unable to analyze sentiment');
   }
-
 
   return sentiment.score as number;
 }
