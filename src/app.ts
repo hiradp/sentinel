@@ -24,5 +24,5 @@ app.message(/(.*?)/, async ({ message, say }) => {
   // Start your app
   await app.start(3000);
 
-  console.log('⚡️ Bolt app is running!');
+  console.log('Sentinel app is running!');
 })();

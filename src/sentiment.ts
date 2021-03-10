@@ -1,7 +1,6 @@
 // Imports the Google Cloud client library
 import * as language from '@google-cloud/language';
 
-
 export async function analyzeSentiment(text: string): Promise<number> {
   // Creates a client
   const client = new language.LanguageServiceClient();
