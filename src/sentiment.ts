@@ -25,5 +25,6 @@ export async function analyzeSentiment(text: string): Promise<number> {
     throw new Error('unable to analyze sentiment');
   }
 
-  return sentiment.score as number;
+  const score = sentiment.score as number;
+  return Math.round((score + Number.EPSILON) * 100) / 100;
 }
